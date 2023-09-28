@@ -1,0 +1,95 @@
+@mixin button {
+  width: 130px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+  7px 7px 20px 0px rgba(0,0,0,.1),
+  4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: #0081a9;
+  &:hover {
+    color: #000000;
+    background: transparent;
+    box-shadow:none;
+    &::after, &::before {
+      width:100%;
+      transition:800ms ease all;
+    }
+  }
+  &::before, &::after {
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #000000;
+    box-shadow:
+    -1px -1px 5px 0px #fff,
+    7px 7px 20px 0px #0003,
+    4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+  }
+  &::after {
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+}
+
+@mixin text {
+  div.row-about-me {
+    h1.section-heading-about-me {
+      text-align: center;
+      color: #0081a9;
+      text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      font-size: 30px;
+      padding: 20px 0;
+    }
+    div.column-about-me {
+      padding: 0 1em 1em 1em;
+      text-align: center;
+      div.card-about-me {
+        height: 100%;
+        padding: 2em 1.5em;
+        background: linear-gradient(#ffffff 50%, #2c7bfe 50%);
+        background-size: 100% 200%;
+        background-position: 0 2.5%;
+        border-radius: 5px;
+        box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+        cursor: pointer;
+        transition: 0.5s;
+        .icon-wrapper {
+          background-color: #2c7bfe;
+          position: relative;
+          font-size: 30px;
+          color: #ffffff;
+          border-radius: 50%;
+          transition: 0.5s;
+        }
+        p {
+          color: #575a7b;
+          font-size: 14px;
+          line-height: 1.6;
+        }
+        &:hover {
+          background-position: 0 100%;
+          .icon-wrapper {
+            background-color: #ffffff;
+            color: #2c7bfe;
+          }
+        }
+      }
+    }
+  }
+}
