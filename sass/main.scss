@@ -300,54 +300,69 @@ section.projects {
 
 // footer-end
 footer {
-  section.mb-4 {
-    .social-media-list {
-      position: relative;
-      font-size: 15px;
-      text-align: center;
-      width: 50%;
-      margin: auto;
-      padding: 0;
-      li {
+  .pt-4 {
+    padding-bottom: 10px;
+    .contact {
+      color: #0081a9;
+    }
+    div.mb-4 {
+      .social-media-list {
         position: relative;
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        margin: 10px 3px;
-        line-height: 30px;
-        border-radius: 50%;
-        color: #fff;
-        background-color: #0081a9;
-        cursor: pointer;
-        transition: all 0.2s ease-in-out;
-        .social-media-list li:after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
+        font-size: 15px;
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        padding: 0;
+        li {
+          position: relative;
+          display: inline-block;
           width: 30px;
           height: 30px;
-          line-height: 60px;
+          margin: 10px 3px;
+          line-height: 30px;
           border-radius: 50%;
-          opacity: 0;
-          box-shadow: 0 0 0 1px #fff;
-          transition: all 0.2s ease-in-out;
-        }
-        a {
           color: #fff;
-        }
-        &:hover {
-          a {
-            color: #000;
+          background-color: #0081a9;
+          cursor: pointer;
+          transition: all 0.2s ease-in-out;
+          .social-media-list li:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            line-height: 60px;
+            border-radius: 50%;
+            opacity: 0;
+            box-shadow: 0 0 0 1px #fff;
+            transition: all 0.2s ease-in-out;
           }
-          background-color: #fff;
-          &::after {
-            opacity: 1;
-            transform: scale(1.12);
-            transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+          a {
+            color: #fff;
+          }
+          &:hover {
+            a {
+              color: #000;
+            }
+            background-color: #fff;
+            &::after {
+              opacity: 1;
+              transform: scale(1.12);
+              transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+            }
           }
         }
       }
+    }
+    .up {
+      @include button;
+      margin-left: auto;
+      margin-right: auto;
+      .nav-link {
+        display: inline;
+      }
+      
     }
   }
 }
