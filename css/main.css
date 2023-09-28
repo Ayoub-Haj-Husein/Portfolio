@@ -449,9 +449,6 @@ section.about-me div.row-about-me div.column-about-me div.card-about-me p {
   font-size: 14px;
   line-height: 1.6;
 }
-section.about-me div.row-about-me div.column-about-me div.card-about-me:hover {
-  background-position: 0 100%;
-}
 section.about-me div.row-about-me div.column-about-me div.card-about-me:hover .icon-wrapper {
   background-color: #ffffff;
   color: #2c7bfe;
