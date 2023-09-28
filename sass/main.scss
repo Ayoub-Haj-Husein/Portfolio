@@ -38,7 +38,9 @@ nav {
 header {
   background-image: url(../images/background-image.jpg);
   height: 20vh;
-  padding: 16px;
+  padding: 16px 0px;
+  background-size: cover;
+  width: 100%;
     img {
       width: 80px;
       border-radius: 10px;
@@ -251,7 +253,7 @@ section.projects {
   main.box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap:15px;
+    gap:20px;
     padding-bottom: 50px;
     div.box {
       box-shadow: 0 5px 10px rgba(0,0,0,.2);
