@@ -9,8 +9,8 @@ import { Grid } from '@mui/material';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 function App() {
   return (
-    <Container>
-      <Grid container>
+    <Container className='margin_60'>
+      <Grid container spacing={7}>
         <Grid 
           item 
           xs={12} 
