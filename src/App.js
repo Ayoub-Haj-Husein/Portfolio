@@ -19,9 +19,9 @@ function App() {
           lg={3}>
           <Profile />
         </Grid>
-        <Grid item xs style={{'backgroundColor': 'red'}}>
-          <Header />
+        <Grid item xs>
           <Router>
+            <Header />
             <Routes>
               <Route path='/portfolio' element={<Portfolio />} />
               <Route path='/' element={<Resume />} />

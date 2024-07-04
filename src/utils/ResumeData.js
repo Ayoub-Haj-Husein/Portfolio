@@ -3,7 +3,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 export const resumeData = {
-  name: 'Ayoub Is Coding',
+  name: 'Ayoub Husein',
   title: 'Full Stack Developer',
   birthday: '17 / 2 / 1996',
   email: 'ayoub@gmail.com',
